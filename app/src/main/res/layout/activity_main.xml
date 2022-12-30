@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Погода в вашем городе"
+        android:layout_marginTop="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/result_inform4"
+        android:layout_marginTop="10sp"
+        android:layout_marginHorizontal="50sp"
+        android:backgroundTint="@android:color/background_dark"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:hint="Введите название города" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_below="@+id/user_field"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="130sp"
+        android:backgroundTint="@color/white"
+        android:textColor="#000"
+        android:text="Узнать погоду" />
+
+    <TextView
+        android:id="@+id/result_inform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="15sp"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/result_inform2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_inform"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/result_inform3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_inform2"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/result_inform4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_inform3"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp" />
+</RelativeLayout>
